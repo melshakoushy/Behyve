@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PPRightGroteskText-WideBold.ttf">
+            <string>PPRightGroteskText-WideBold</string>
+        </array>
+        <array key="PPRightGroteskText-WideLight.ttf">
+            <string>PPRightGroteskText-WideLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On BoardingVC-->
+        <scene sceneID="4KQ-06-bJL">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingVC" id="gyU-a7-6po" customClass="OnBoardingVC" customModule="Behyve" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kr0-AH-2Fo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QualityOnboarding" translatesAutoresizingMaskIntoConstraints="NO" id="2CV-5o-DFo">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="788"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShadowOnboarding" translatesAutoresizingMaskIntoConstraints="NO" id="u7q-gx-ENa">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46P-fo-nvM">
+                                <rect key="frame" x="312" y="75" width="63" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip">
+                                    <fontDescription key="titleFontDescription" name="PPRightGroteskText-WideLight" family="PP Right Grotesk Text" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipBtnPressed:" destination="gyU-a7-6po" eventType="touchUpInside" id="rW9-4A-32c"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="NiX-Qu-QX9">
+                                <rect key="frame" x="16" y="506.66666666666674" width="361" height="281.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-nn-H9x">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="58.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="PPRightGroteskText-WideBold" family="PP Right Grotesk Text" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Behyve - The Gateway To Ibiza’s Talents, Treasures And People" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-Cc-Dwv">
+                                        <rect key="frame" x="0.0" y="90.333333333333314" width="361" height="42"/>
+                                        <fontDescription key="fontDescription" name="PPRightGroteskText-WideLight" family="PP Right Grotesk Text" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Qjj-wA-87F">
+                                        <rect key="frame" x="0.0" y="164.33333333333331" width="361" height="35"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFN-XG-LkE">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="14"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="The First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-bf-ye4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="325.33333333333331" height="14"/>
+                                                        <fontDescription key="fontDescription" name="PPRightGroteskText-WideLight" family="PP Right Grotesk Text" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Of 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-sU-sI6">
+                                                        <rect key="frame" x="325.33333333333331" y="0.0" width="35.666666666666686" height="14"/>
+                                                        <fontDescription key="fontDescription" name="PPRightGroteskText-WideLight" family="PP Right Grotesk Text" pointSize="12"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="hjb-RU-ndv">
+                                                <rect key="frame" x="0.0" y="30" width="361" height="5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="J6S-8V-IFm"/>
+                                                </constraints>
+                                                <color key="progressTintColor" name="DarkOrange"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="80H-Ht-LWM">
+                                        <rect key="frame" x="0.0" y="231.33333333333331" width="361" height="50"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVI-Uh-dDs">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="591-2c-NqC"/>
+                                                    <constraint firstAttribute="width" constant="50" id="9rO-de-X5I"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="OnboardingBack"/>
+                                                <connections>
+                                                    <action selector="backBtnPressed:" destination="gyU-a7-6po" eventType="touchUpInside" id="aiQ-IY-Sig"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkf-RA-ClL">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                <color key="backgroundColor" name="LightOrange"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                                    <fontDescription key="titleFontDescription" name="PPRightGroteskText-WideRegular" family="PP Right Grotesk Text" pointSize="18"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextBtnPressed:" destination="gyU-a7-6po" eventType="touchUpInside" id="sb1-Ck-cHq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Xe-T7-o2Y"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="2CV-5o-DFo" firstAttribute="leading" secondItem="4Xe-T7-o2Y" secondAttribute="leading" id="3j3-az-V3r"/>
+                            <constraint firstAttribute="bottom" secondItem="NiX-Qu-QX9" secondAttribute="bottom" constant="64" id="5Ps-pB-eTG"/>
+                            <constraint firstItem="46P-fo-nvM" firstAttribute="top" secondItem="4Xe-T7-o2Y" secondAttribute="top" constant="16" id="E16-5t-NvX"/>
+                            <constraint firstItem="4Xe-T7-o2Y" firstAttribute="trailing" secondItem="46P-fo-nvM" secondAttribute="trailing" constant="18" id="JFE-hd-eX2"/>
+                            <constraint firstItem="u7q-gx-ENa" firstAttribute="leading" secondItem="4Xe-T7-o2Y" secondAttribute="leading" id="MkF-OI-Dqa"/>
+                            <constraint firstItem="NiX-Qu-QX9" firstAttribute="leading" secondItem="4Xe-T7-o2Y" secondAttribute="leading" constant="16" id="Oae-34-sQk"/>
+                            <constraint firstAttribute="bottom" secondItem="u7q-gx-ENa" secondAttribute="bottom" id="Rnc-yY-aGA"/>
+                            <constraint firstItem="u7q-gx-ENa" firstAttribute="top" secondItem="kr0-AH-2Fo" secondAttribute="top" id="a9W-qp-Rvt"/>
+                            <constraint firstItem="4Xe-T7-o2Y" firstAttribute="trailing" secondItem="NiX-Qu-QX9" secondAttribute="trailing" constant="16" id="br2-mo-kzz"/>
+                            <constraint firstItem="2CV-5o-DFo" firstAttribute="bottom" secondItem="NiX-Qu-QX9" secondAttribute="bottom" id="lN4-qo-gLf"/>
+                            <constraint firstItem="2CV-5o-DFo" firstAttribute="top" secondItem="kr0-AH-2Fo" secondAttribute="top" id="n9U-5I-sFu"/>
+                            <constraint firstItem="u7q-gx-ENa" firstAttribute="trailing" secondItem="4Xe-T7-o2Y" secondAttribute="trailing" id="oIy-l0-KIQ"/>
+                            <constraint firstItem="2CV-5o-DFo" firstAttribute="trailing" secondItem="4Xe-T7-o2Y" secondAttribute="trailing" id="uls-oX-cnv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BJz-lZ-AkX"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backBtn" destination="UVI-Uh-dDs" id="tYZ-hv-toh"/>
+                        <outlet property="mainImg" destination="2CV-5o-DFo" id="heZ-cm-azg"/>
+                        <outlet property="nextBtn" destination="Lkf-RA-ClL" id="fnu-Q9-Aad"/>
+                        <outlet property="progressDescLbl" destination="Pnh-sU-sI6" id="YCy-jg-x3k"/>
+                        <outlet property="progressTitleLbl" destination="b8e-bf-ye4" id="OVR-Ia-asN"/>
+                        <outlet property="progressView" destination="hjb-RU-ndv" id="a2X-wE-BYw"/>
+                        <outlet property="skipBtn" destination="46P-fo-nvM" id="fLT-4b-D2y"/>
+                        <outlet property="titleLbl" destination="aYg-nn-H9x" id="Cxp-ZJ-5IU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJb-wk-e3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660.3053435114502" y="84.507042253521135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="25t-tb-s3A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pgf-8e-Mt3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FSi-jz-3fF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gyU-a7-6po" kind="relationship" relationship="rootViewController" id="qqo-Gk-yxO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eg5-yd-4B4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.58778625954199" y="84.507042253521135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OnboardingBack" width="50" height="50"/>
+        <image name="QualityOnboarding" width="414" height="670"/>
+        <image name="ShadowOnboarding" width="414" height="896"/>
+        <namedColor name="DarkOrange">
+            <color red="0.94499999284744263" green="0.3529999852180481" blue="0.012000000104308128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightOrange">
+            <color red="0.9570000171661377" green="0.50999999046325684" blue="0.067000001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
