@@ -32,6 +32,7 @@ class OnBoardingVC: UIViewController {
     }
     
     enum imageNames: String {
+        case CommunityOnboarding
         case QualityOnboarding
         case TrustOnboarding
     }
@@ -50,7 +51,7 @@ class OnBoardingVC: UIViewController {
         switch page {
         case .first:
             titleLbl.text = titles.Community.rawValue
-            mainImg.image = UIImage(named: imageNames.QualityOnboarding.rawValue)
+            mainImg.image = UIImage(named: imageNames.CommunityOnboarding.rawValue)
             backBtn.isHidden = true
             progressTitleLbl.text = "The First"
             progressDescLbl.text = "1 Of 3"
