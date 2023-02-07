@@ -39,6 +39,9 @@
 		6D5EE111298ED623001560F2 /* PPRightGroteskText-WideBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D5EE109298ED623001560F2 /* PPRightGroteskText-WideBold.ttf */; };
 		6D5EE113298ED64A001560F2 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5EE112298ED64A001560F2 /* UIFont+Extensions.swift */; };
 		6D5EE120298EE6EB001560F2 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5EE11F298EE6EB001560F2 /* UICollectionView+Extensions.swift */; };
+		6D5EE12A2992F2D8001560F2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5EE1292992F2D8001560F2 /* LoginVC.swift */; };
+		6D5EE12D2992F32F001560F2 /* AuthenticationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5EE12C2992F32F001560F2 /* AuthenticationStoryboard.storyboard */; };
+		6D5EE13029930913001560F2 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5EE12F29930913001560F2 /* UITextField+Extensions.swift */; };
 		6D9CEE322989C77D008CCECE /* ServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9CEE312989C77D008CCECE /* ServicesStoryboard.storyboard */; };
 		6D9CEE372989C80E008CCECE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CEE362989C80E008CCECE /* Constants.swift */; };
 		6D9CEE43298ED2A4008CCECE /* OnBoardingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9CEE42298ED2A4008CCECE /* OnBoardingStoryboard.storyboard */; };
@@ -104,6 +107,9 @@
 		6D5EE109298ED623001560F2 /* PPRightGroteskText-WideBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PPRightGroteskText-WideBold.ttf"; sourceTree = "<group>"; };
 		6D5EE112298ED64A001560F2 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		6D5EE11F298EE6EB001560F2 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		6D5EE1292992F2D8001560F2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6D5EE12C2992F32F001560F2 /* AuthenticationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthenticationStoryboard.storyboard; sourceTree = "<group>"; };
+		6D5EE12F29930913001560F2 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		6D937A6EA28850AAC3798698 /* Pods-Behyve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Behyve.debug.xcconfig"; path = "Target Support Files/Pods-Behyve/Pods-Behyve.debug.xcconfig"; sourceTree = "<group>"; };
 		6D9CEE312989C77D008CCECE /* ServicesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServicesStoryboard.storyboard; sourceTree = "<group>"; };
 		6D9CEE362989C80E008CCECE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 			children = (
 				6D9CEE40298ED267008CCECE /* OnBoarding */,
 				6D0BF4AF2989B6E200159B8D /* MainTabBar */,
+				6D5EE1222992EA70001560F2 /* Authentication */,
 				6D0BF4B42989BA3000159B8D /* Home */,
 				6D0BF4B52989BA3B00159B8D /* Services */,
 				6D0BF4B62989BA4700159B8D /* Events */,
@@ -263,6 +270,7 @@
 				6D0BF4BB2989BACB00159B8D /* UIViewController+Extensions.swift */,
 				6D5EE112298ED64A001560F2 /* UIFont+Extensions.swift */,
 				6D5EE11F298EE6EB001560F2 /* UICollectionView+Extensions.swift */,
+				6D5EE12F29930913001560F2 /* UITextField+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,6 +379,31 @@
 				6D5EE103298ED623001560F2 /* PPRightGroteskText-WideRegularItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6D5EE1222992EA70001560F2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6D5EE1252992EADB001560F2 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6D5EE1252992EADB001560F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D5EE12C2992F32F001560F2 /* AuthenticationStoryboard.storyboard */,
+				6D5EE1282992F2BE001560F2 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D5EE1282992F2BE001560F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D5EE1292992F2D8001560F2 /* LoginVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		6D9CEE332989C7AC008CCECE /* View */ = {
@@ -539,6 +572,7 @@
 				6D0BF4C72989C6C700159B8D /* EventsStoryboard.storyboard in Resources */,
 				6D5EE110298ED623001560F2 /* PPRightGroteskText-WideBoldItalic.ttf in Resources */,
 				6D5EE10F298ED623001560F2 /* PPRightGroteskText-WideMediumItalic.ttf in Resources */,
+				6D5EE12D2992F32F001560F2 /* AuthenticationStoryboard.storyboard in Resources */,
 				6D0BF4AE2989AF0700159B8D /* Launch Screen.storyboard in Resources */,
 				6D9CEE43298ED2A4008CCECE /* OnBoardingStoryboard.storyboard in Resources */,
 				6D5EE10E298ED623001560F2 /* PPRightGroteskText-WideRegular.ttf in Resources */,
@@ -681,6 +715,7 @@
 				6D9CEE45298ED312008CCECE /* OnBoardingVC.swift in Sources */,
 				6D0BF4B32989B71C00159B8D /* MainTabBarController.swift in Sources */,
 				6D0BF46F29899D3500159B8D /* AppDelegate.swift in Sources */,
+				6D5EE12A2992F2D8001560F2 /* LoginVC.swift in Sources */,
 				6D0BF4BC2989BACB00159B8D /* UIViewController+Extensions.swift in Sources */,
 				6D0BF4BA2989BA9100159B8D /* HomeVC.swift in Sources */,
 				6D0BF4A52989A91400159B8D /* UIView+Extensions.swift in Sources */,
@@ -691,6 +726,7 @@
 				6D0BF4C12989C4A000159B8D /* ColorManager.swift in Sources */,
 				6D0BF47129899D3500159B8D /* SceneDelegate.swift in Sources */,
 				6D5EE120298EE6EB001560F2 /* UICollectionView+Extensions.swift in Sources */,
+				6D5EE13029930913001560F2 /* UITextField+Extensions.swift in Sources */,
 				6D5EE113298ED64A001560F2 /* UIFont+Extensions.swift in Sources */,
 				6D0BF4BE2989BAFA00159B8D /* Storyboarded.swift in Sources */,
 			);

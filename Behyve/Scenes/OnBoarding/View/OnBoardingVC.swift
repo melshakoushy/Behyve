@@ -86,6 +86,8 @@ class OnBoardingVC: UIViewController {
     
     //MARK: - Buttons Actions
     @IBAction func skipBtnPressed(_ sender: Any) {
+        let vc = instantiateViewController(viewControllerId: .NavLoginVC, StoryboardId: .AuthenticationStoryboard)
+        setRoot(ViewController: vc!, animated: true)
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
@@ -102,6 +104,9 @@ class OnBoardingVC: UIViewController {
             page = .second
         } else if page == .second {
             page = .third
+        } else if page == .third {
+            let vc = instantiateViewController(viewControllerId: .NavLoginVC, StoryboardId: .AuthenticationStoryboard)
+            setRoot(ViewController: vc!, animated: true)
         }
         setupView()
     }

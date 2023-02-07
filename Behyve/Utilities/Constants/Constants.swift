@@ -15,6 +15,7 @@ enum StoryboardID: String {
     case EventsStoryboard
     case MoreStoryboard
     case OnBoardingStoryboard
+    case AuthenticationStoryboard
 }
 
 // MARK: - ViewController ID
@@ -29,6 +30,8 @@ enum ViewControllerID: String {
     case MoreVC
     case MoreNavVC
     case OnBoardingVC
+    case LoginVC
+    case NavLoginVC
 }
 
 class UserDefaultsKeys {
