@@ -32,6 +32,10 @@ enum ViewControllerID: String {
     case OnBoardingVC
     case LoginVC
     case NavLoginVC
+    case SignUpVC
+    case MobileVC
+    case ConfirmationVC
+    case ForgotPasswordVC
 }
 
 class UserDefaultsKeys {

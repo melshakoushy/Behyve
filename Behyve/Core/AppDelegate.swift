@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        setupView()
+        setupView()
         return true
     }
 
@@ -41,6 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 extension AppDelegate {
+//    func setupView() {
+//        let backImage = UIImage(named: "back")?.withRenderingMode(.alwaysOriginal)
+//        UINavigationBar.appearance().backIndicatorImage = backImage
+//        UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
+//        let barBtn = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+//        let BarButtonItemAppearance = UIBarButtonItem.appearance()
+//        BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+//        BarButtonItemAppearance.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .highlighted)
+//        BarButtonItemAppearance.setBackButtonBackgroundImage(backImage, for: .normal, barMetrics: .default)
+//        BarButtonItemAppearance.setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -200, vertical: 0), for:UIBarMetrics.default)
+//        UINavigationBar.appearance().backItem?.backBarButtonItem = barBtn
+//    }
+    
     func setupView() {
         let backImage = UIImage(named: "back")?.withRenderingMode(.alwaysOriginal)
         UINavigationBar.appearance().backIndicatorImage = backImage
