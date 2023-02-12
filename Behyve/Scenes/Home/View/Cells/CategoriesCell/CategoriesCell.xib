@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PPRightGroteskText-WideBold.ttf">
+            <string>PPRightGroteskText-WideBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesCell" customModule="Behyve" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-Lh-NmT">
+                        <rect key="frame" x="4" y="0.0" width="130" height="164"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QualityOnboarding" translatesAutoresizingMaskIntoConstraints="NO" id="mAu-eg-DI6">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="164"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PII-hW-EOK">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="164"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-jm-CWN">
+                                <rect key="frame" x="16" y="70.333333333333329" width="98" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="PPRightGroteskText-WideBold" family="PP Right Grotesk Text" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PII-hW-EOK" firstAttribute="top" secondItem="z3G-Lh-NmT" secondAttribute="top" id="2d3-QA-uXM"/>
+                            <constraint firstItem="pl6-jm-CWN" firstAttribute="centerY" secondItem="z3G-Lh-NmT" secondAttribute="centerY" id="3mK-Zo-ba7"/>
+                            <constraint firstAttribute="bottom" secondItem="mAu-eg-DI6" secondAttribute="bottom" id="E0X-jU-Hur"/>
+                            <constraint firstItem="PII-hW-EOK" firstAttribute="leading" secondItem="z3G-Lh-NmT" secondAttribute="leading" id="EOR-wV-jKV"/>
+                            <constraint firstAttribute="trailing" secondItem="mAu-eg-DI6" secondAttribute="trailing" id="G7T-Tj-bFp"/>
+                            <constraint firstAttribute="trailing" secondItem="pl6-jm-CWN" secondAttribute="trailing" constant="16" id="NPQ-Ek-SZ4"/>
+                            <constraint firstAttribute="bottom" secondItem="PII-hW-EOK" secondAttribute="bottom" id="Wc8-rJ-Teb"/>
+                            <constraint firstItem="pl6-jm-CWN" firstAttribute="leading" secondItem="z3G-Lh-NmT" secondAttribute="leading" constant="16" id="XUb-me-npE"/>
+                            <constraint firstItem="mAu-eg-DI6" firstAttribute="leading" secondItem="z3G-Lh-NmT" secondAttribute="leading" id="c4G-Ao-hHz"/>
+                            <constraint firstItem="mAu-eg-DI6" firstAttribute="top" secondItem="z3G-Lh-NmT" secondAttribute="top" id="tNG-cn-0R0"/>
+                            <constraint firstAttribute="trailing" secondItem="PII-hW-EOK" secondAttribute="trailing" id="vgy-UX-w2R"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z3G-Lh-NmT" secondAttribute="bottom" id="Bup-zB-TTt"/>
+                <constraint firstItem="z3G-Lh-NmT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Ia5-n3-eI8"/>
+                <constraint firstAttribute="trailing" secondItem="z3G-Lh-NmT" secondAttribute="trailing" constant="4" id="PaN-K4-NvI"/>
+                <constraint firstItem="z3G-Lh-NmT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="r8X-ni-2Kj"/>
+            </constraints>
+            <size key="customSize" width="223" height="254"/>
+            <point key="canvasLocation" x="270.99236641221376" y="92.253521126760575"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="QualityOnboarding" width="414" height="670"/>
+    </resources>
+</document>

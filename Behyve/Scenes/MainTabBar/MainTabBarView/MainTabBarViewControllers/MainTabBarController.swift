@@ -23,6 +23,11 @@ extension MainTabBarController: UITabBarControllerDelegate {
         setTabBarAppearance()
     }
     
+    override func viewWillLayoutSubviews() {
+     super.viewWillLayoutSubviews()
+        tabBar.roundCorners(corners: [.topLeft, .topRight], radius: 25)
+ }
+    
     func setTabBarItems() {
         let homeVC = UIViewController.instantiateViewController(viewControllerId: .HomeNavVC, StoryboardId: .HomeStoryboard)!
         homeVC.tabBarItem.image = UIImage(named: "HomeUnselected")?.withRenderingMode(.alwaysTemplate)

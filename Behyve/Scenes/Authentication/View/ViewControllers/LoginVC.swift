@@ -34,6 +34,8 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        let vc =  UIViewController().buildMainTabViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func fbBtnPressed(_ sender: Any) {

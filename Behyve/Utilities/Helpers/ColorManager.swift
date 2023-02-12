@@ -12,5 +12,6 @@ class ColorManager {
     struct AppStaticColors {
         static let darkOrange = UIColor(named: "DarkOrange")!
         static let lightOrange = UIColor(named: "LightOrange")!
+        static let greyBackground = UIColor(named: "GreyBackground")!
     }
 }
